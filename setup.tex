@@ -1,0 +1,50 @@
+% between \documentclass{article} and \begin{document} use \include{setup}
+
+% page geometry and space formatting
+\usepackage[a4paper, total={5in, 7in}]{geometry}
+\renewcommand{\baselinestretch}{1.24}
+% \setlength{\belowcaptionskip}{\abovecaptionskip}
+
+% general packages
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% use biblatex for ieee referencing 
+% \usepackage[
+%     backend=biber,
+%     style=ieee,
+%     url=false
+%   ]{biblatex}
+% \addbibresource{bib.bib}
+% use \printbibliography at end
+
+% use natbib for citations with name and year
+% \usepackage{natbib}
+% \bibliographystyle{abbrvnat}
+% \def\bibfont{\footnotesize}
+% \setcitestyle{authoryear,open={(},close={)}}
+% use \bibliography{bib1, bib2} at end
+
+% hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,  
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+% make caption fonts smaller, bold figure text
+\usepackage[font=small,labelfont=bf]{caption}
+
+% subfigure
+\usepackage{subcaption}
+
+% footnotes in tables and links, need footmisc to always force footnotes at bottom (good for [b] images)
+\usepackage[bottom]{footmisc}
+\usepackage{tablefootnote,footnotehyper}
+\hypersetup{colorlinks}
